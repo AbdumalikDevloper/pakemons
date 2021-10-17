@@ -1,0 +1,156 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+}
+
+::-webkit-scrollbar{
+  width: 3px!important;
+}
+::-webkit-scrollbar-thumb{
+  background-color: yellow;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-track{
+  background-color: black;
+}
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+.modal--open {
+  display: block;
+
+}
+.modal-dialog {
+  background-color: #fff;
+  width: 70%;
+  left: 15%;
+  position: absolute;
+  top: 150px;
+  padding: 25px;
+  border-radius: 10px;
+}
+.modal-close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+.pokemons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 25px;
+  background-color: dodgerblue;
+}
+.pok {
+  box-shadow: 0 0 10px 5px dodgerblue;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  width: 18%;
+  height: 40vh;
+  margin: 10px;
+  background-color: black;
+}
+.pok-id {
+  position: absolute;
+  display: inline-flex;
+  width: 35px;
+  height: 45px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 2px solid black;
+  background-color: yellow;
+  color: black;
+  font-weight: bold;
+  right: 15px;
+  top: 15px;
+}
+
+.pok-name{
+  font-weight: bold;
+  font-size: 20px;
+  color: yellow;
+  margin-top: 40px;
+}
+.pok:hover{
+  background-color: yellow;
+  transition: 0.3s linear;
+}
+.pok:hover .pok-name{
+  color: black;
+}
+.pok:hover .pok-id{
+  background-color: black;
+  color: yellow;
+  border: 2px solid yellow;
+  transition: 0.3s linear;
+}
+.form{
+  width: 100%;
+  height: 25vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('https://picsum.photos/1400/250');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.input{
+  padding: 10px;
+  margin: 10px;
+  border-radius: 20px;
+}
+.btn{
+  padding: 10px;
+  border-radius: 10px;
+  color: black;
+  background-color: yellow;
+  border: 2px solid black;
+}
+.btn:hover{
+  color: yellow;
+  background-color: black;
+  border: 2px solid yellow;
+  transition: .3s linear;
+}
+.modal-dialog{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.modal_box1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.modal_box1 h2 {
+  padding: 10px;
+}
+.modal-img, .modal-title{
+  text-align: center;
+}
+h2{
+  text-transform: uppercase;
+}
